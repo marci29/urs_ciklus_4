@@ -1,0 +1,12 @@
+-- 16. Osmi zadatak sa pokaznog završnog ispita (završni ispit 2021.) 
+-- Na PicoBlaze procesor spojene su dvije ulazne vanjske jedinice (VJ1, port id: 0x20, VJ2, port id: 0x40) i jedna izlazna jedinica (VJ3, port id: 0x60),
+-- te vremenski sklop koji je spojen na prekidnuliniju PicoBlaze procesora.
+-- Potrebno je riješiti sljedeći zadatak: Na prekid dobiven od prekidne jedinice potrebno je pročitatipodatak s ulaznih jedinica (podaci su u 8‐bitnom 2'k formatu).
+-- Na prvi prekid čita se podatak s VJ1, a na sljedeći prekid s VJ2. Na treći prekid potrebno je poslati podatak na VJ3, te postupak ponavljati beskonačno.
+-- Ako je podatak primljen s VJ1 paran, onda se podatak s VJ2 šalje nepromijenjen na VJ3. Ako je podatak s VJ1 neparan, onda se na VJ3 šalje negirana vrijednost podatka primljenog s VJ2.
+-- Potrebno je:
+-- 1. Napisati sve procese u VHDL‐u koji će obrađivati vanjske jedinice i prekidnu jedinicu
+-- 2. Napisati program za procesor
+-- 3. Napisati programski kod u VHDL‐u za top‐level entitet i arhitekturu
+-- 4. Nacrtati blok‐shemu povezivanja komponenti
+-- Za procesor i ROM koristite sljedeće deklaracije komponenti: https://github.com/marci29/urs_ciklus_4/blob/main/Screenshot_20240603_190510.png
