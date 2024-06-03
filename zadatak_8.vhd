@@ -1,0 +1,3 @@
+-- 19. Na PicoBlaze je spojena jedna ulazna vanjska jedinica (port ID 0x80) i dvije izlazne vanjske jedinice (port ID 0x60 i 0x40), te vremenski sklop spojen na prekidnu liniju PicoBlaze procesora. 
+-- Na svaki prekid dobiven od prekidne jedinice pročitati podatke s ulazne jedinice i ispitati mu paritet. Ako je paran, podatak se šalje na vanjsku jedinicu 0x40, inače na 0x60. 
+-- Potrebno je napisati procese u VHDL-u koji de odrađivati vanjske jedinice i prekidna jedinica, te program za procesor. Program se beskonačno odvija.
