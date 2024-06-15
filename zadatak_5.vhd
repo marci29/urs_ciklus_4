@@ -1,2 +1,3 @@
 -- 11. U VHDL-u definirati vanjsku jedinicu za processor PicoBlaze koja na adresi 0x10 prima 8-bitni podatak, a na adresama 0x20 i 0x21 računa kvadrat tog broja; 
--- na adresi 0x20 niži, a na adresi 0x21 viši dio rezultata! Napišite program za PicoBlaze koji računa kvadrat vrijednosti spremljene u registru R2, a rezultat operacije sprema u register R8 i R9.
+-- na adresi 0x20 niži, a na adresi 0x21 viši dio rezultata! 
+-- Napišite program za PicoBlaze koji računa kvadrat vrijednosti spremljene u registru R2, a rezultat operacije sprema u registre R8 i R9.
